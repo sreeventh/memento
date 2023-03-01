@@ -35,12 +35,12 @@ mysqli_select_db($con, 'memento');
       <span class="lines line-3"></span>
     </label>
 
-    <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
-    <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+    <a href="tho.php" class="menu-item blue" style="text-decoration: none;">🤔</a>
+    <a href="mem.php" class="menu-item green" style="text-decoration: none;">💚</a>
     <a href="logout.php" class="menu-item red" style="text-decoration: none;">⭕</a>
-    <a href="#" class="menu-item purple" style="text-decoration: none;">⚙</a>
-    <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
-    <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+    <a href="settings.php" class="menu-item purple" style="text-decoration: none;">⚙</a>
+    <a href="idea.php" class="menu-item orange" style="text-decoration: none;">⁉</a>
+    <a href="relive.php" class="menu-item lightblue" style="text-decoration: none;">✨</a>
   </nav>
 </body>
 
