@@ -30,7 +30,7 @@ if($row==true){
 else{
     ?>
     <script>
-        alert("Incorrect Usrename or Password!")
+        alert("Incorrect Username or Password!")
         window.location.href = "index.php"
     </script>
     <?php
