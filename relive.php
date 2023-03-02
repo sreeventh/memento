@@ -62,10 +62,10 @@ mysqli_select_db($con, 'memento');
             <h3 id="idb" style="color: orange;">Ideas</h3>
         </div>
         <div class="entry">
-            <h3 style="color: green;">Memories</h3>
+            <h3 style="color: green;">JavaScript</h3>
         </div>
         <div class="entry">
-            <h3 style="color: yellow;">Thoughts</h3>
+            <h3 style="color: yellow;">PHP_Mysql</h3>
         </div>
     </div>
 

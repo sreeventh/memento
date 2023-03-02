@@ -26,7 +26,7 @@
   <!------------------------------- -----------------------------navbar----------------------------- ------------------------------->
   <nav class="navii navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand">Memento</a>
+      <a class="navbar-brand">CodePAd</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -97,15 +97,7 @@
   <!-- ---------------------------------------------dbox for about--------------------------------------------- -->
   <div class="container" id="abt">
     <p style="color: aqua">
-      "Memento" is a personal memory and reflection app and website that allows
-      users to capture and remember important moments and experiences from
-      their lives. The app provides a space for users to store photos, videos,
-      audio recordings, and text notes, organized by date or category.
-      Additionally, "Memento" encourages users to reflect on their experiences
-      by providing prompts and questions to help them process and learn from
-      their memories. The app or website aims to help users gain a greater
-      appreciation for their lives and develop a deeper sense of
-      self-awareness and personal growth.
+      CodePAd - An application where you can store your valuable programming notes. 
     </p>
     <p>
       <a onclick="closa()" style="text-decoration: none; cursor: pointer">❌</a>
