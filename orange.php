@@ -120,8 +120,8 @@ if (isset($_POST["Submit"])) {
         <input type="text" id="subject" name="subject" required>
         <textarea id="body" name="body"></textarea>
         <input type="submit" name="Submit" value="Submit">
-        <button id="done"><a href="home.php" style="text-decoration: none;color: white;">Done</a></button>
     </form>
+    <a href="home.php" style="text-decoration: none;color: white;">Done</a>
 
 </body>
 

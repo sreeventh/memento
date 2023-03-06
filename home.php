@@ -37,12 +37,10 @@ mysqli_select_db($con, 'memento');
     </label>
 
     <a href="blue.php" class="menu-item blue" style="text-decoration: none;"><i id="blul" class=""></i></a>
-    <a href="green.php" class="menu-item green" style="text-decoration: none;"><i
-        class="fa-brands fa-square-js"></i></a>
-    <a href="red.php" class="menu-item red" style="text-decoration: none;"><i class="fa-brands fa-react"></i></a>
-    <a href="purple.php" class="menu-item purple" style="text-decoration: none;"><i
-        class="fa-brands fa-node-js"></i></a>
-    <a href="orange.php" class="menu-item orange" style="text-decoration: none;">⁉</a>
+    <a href="green.php" class="menu-item green" style="text-decoration: none;"><i id="grel" class=""></i></a>
+    <a href="red.php" class="menu-item red" style="text-decoration: none;"><i id="rel" class=""></i></a>
+    <a href="purple.php" class="menu-item purple" style="text-decoration: none;"><i id="pel" class=""></i></a>
+    <a href="orange.php" class="menu-item orange" style="text-decoration: none;"><i class="fa-solid fa-lightbulb"></i></a>
     <a href="relive.php" class="menu-item lightblue" style="text-decoration: none;"><i class="fa-solid fa-book"></i></a>
   </nav>
   <br>
@@ -54,8 +52,11 @@ $q = " select * from preflang where uid='$_SESSION[id]'";
 $res = mysqli_query($con, $q);
 while ($row = mysqli_fetch_array($res)) {
   $blue = $row['blue'];
+  $green = $row['green'];
+  $purple = $row['purple'];
+  $red = $row['red'];
 }
-// ***************************************************RED***************************************************
+// ***************************************************BLUE***************************************************
 if (isset($blue)) {
 
 
@@ -134,7 +135,282 @@ if (isset($blue)) {
   <?php
 }
 ?>
+<!-- -------------------------------------------green------------------------------------------- -->
+<?php
+if (isset($green)) {
 
+  switch ($green) {
+    case "Python":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-brands fa-python")
+      </script>
+      <?php
+      break;
+    case "Java":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-brands fa-java")
+      </script>
+      <?php
+      break;
+    case "JavaScript":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-brands fa-js")
+      </script>
+      <?php
+      break;
+    case "Ruby":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-sharp fa-solid fa-gem")
+      </script>
+      <?php
+      break;
+    case "C++":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-solid fa-c")
+      </script>
+      <?php
+      break;
+    case "Objective-C":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-solid fa-o")
+      </script>
+      <?php
+      break;
+    case "PHP":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-brands fa-php")
+      </script>
+      <?php
+      break;
+    case "Swift":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-brands fa-swift")
+      </script>
+      <?php
+      break;
+    case "Go":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-brands fa-golang")
+      </script>
+      <?php
+      break;
+    case "C#":
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-solid fa-hashtag")
+      </script>
+      <?php
+      break;
+
+    default:
+      ?>
+      <script>
+        document.getElementById("grel").setAttribute("class", "fa-solid fa-dragon")
+      </script>
+      <?php
+      break;
+  }
+} else {
+  ?>
+  <script>
+    document.getElementById("grel").setAttribute("class", "fa-solid fa-dragon")
+    </script>
+  <?php
+}
+?>
+<!-- --------------------------------------------------RED-------------------------------------------------- -->
+<?php
+if (isset($red)) {
+
+  switch ($red) {
+    case "Python":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-brands fa-python")
+      </script>
+      <?php
+      break;
+    case "Java":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-brands fa-java")
+      </script>
+      <?php
+      break;
+    case "JavaScript":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-brands fa-js")
+      </script>
+      <?php
+      break;
+    case "Ruby":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-sharp fa-solid fa-gem")
+      </script>
+      <?php
+      break;
+    case "C++":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-solid fa-c")
+      </script>
+      <?php
+      break;
+    case "Objective-C":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-solid fa-o")
+      </script>
+      <?php
+      break;
+    case "PHP":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-brands fa-php")
+      </script>
+      <?php
+      break;
+    case "Swift":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-brands fa-swift")
+      </script>
+      <?php
+      break;
+    case "Go":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-brands fa-golang")
+      </script>
+      <?php
+      break;
+    case "C#":
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-solid fa-hashtag")
+      </script>
+      <?php
+      break;
+
+    default:
+      ?>
+      <script>
+        document.getElementById("rel").setAttribute("class", "fa-solid fa-dragon")
+      </script>
+      <?php
+      break;
+  }
+} else {
+  ?>
+  <script>
+    document.getElementById("rel").setAttribute("class", "fa-solid fa-dragon")
+  </script>
+  <?php
+}
+?>
+<!-- --------------------------------------------------PURPLE-------------------------------------------------- -->
+<?php
+if (isset($purple)) {
+
+  switch ($purple) {
+    case "Python":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-brands fa-python")
+      </script>
+      <?php
+      break;
+    case "Java":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-brands fa-java")
+      </script>
+      <?php
+      break;
+    case "JavaScript":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-brands fa-js")
+      </script>
+      <?php
+      break;
+    case "Ruby":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-sharp fa-solid fa-gem")
+      </script>
+      <?php
+      break;
+    case "C++":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-solid fa-c")
+      </script>
+      <?php
+      break;
+    case "Objective-C":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-solid fa-o")
+      </script>
+      <?php
+      break;
+    case "PHP":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-brands fa-php")
+      </script>
+      <?php
+      break;
+    case "Swift":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-brands fa-swift")
+      </script>
+      <?php
+      break;
+    case "Go":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-brands fa-golang")
+      </script>
+      <?php
+      break;
+    case "C#":
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-solid fa-hashtag")
+      </script>
+      <?php
+      break;
+
+    default:
+      ?>
+      <script>
+        document.getElementById("pel").setAttribute("class", "fa-solid fa-dragon")
+      </script>
+      <?php
+      break;
+  }
+} else {
+  ?>
+  <script>
+    document.getElementById("pel").setAttribute("class", "fa-solid fa-dragon")
+  </script>
+  <?php
+}
+?>
 
 
 <!-- JavaScript Bundle with Popper -->
